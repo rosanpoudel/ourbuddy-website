@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="60px" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3702" data-name="Rectangle 3702" width="40" height="40" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_863" data-name="Mask Group 863" clip-path="url(#clip-path)">
+    <g id="icons8-globe" transform="translate(3.286 3.5)">
+      <circle id="Ellipse_496" data-name="Ellipse 496" cx="14.381" cy="14.381" r="14.381" transform="translate(0 0)" fill="#f2f3f6"/>
+      <path id="Path_15018" data-name="Path 15018" d="M33.027,8l-2.81,2.741v3.236L26,18.543v4.218h4.542l2.275,7.889A14.06,14.06,0,0,0,33.027,8Z" transform="translate(-10.148 -4.93)" fill="#3a95f7"/>
+      <path id="Path_15019" data-name="Path 15019" d="M14.319,24.289,12.957,22.18H10.326L7.163,18.665h3.11l4.27-4.218V10.933H11.779L9.254,8.408A14.031,14.031,0,0,0,4,19.326l4.218,4.243,1.135,6.837a14.006,14.006,0,0,0,5.4,2.628l1.629-3.825,1.682-.877.009-4.043Z" transform="translate(-3.612 -5.052)" fill="#3a95f7"/>
+    </g>
+    <path id="Path_15020" data-name="Path 15020" d="M7.5,0A7.5,7.5,0,1,1,0,7.5,7.5,7.5,0,0,1,7.5,0Z" transform="translate(21.667 19.167)" fill="#d9e9ff"/>
+    <path id="Polygon_4" data-name="Polygon 4" d="M3.333,0,6.667,4.167H0Z" transform="translate(32.5 31.667) rotate(180)" fill="#445781"/>
+    <rect id="Rectangle_3701" data-name="Rectangle 3701" width="3.333" height="7.5" transform="translate(27.5 21.667)" fill="#445781"/>
+  </g>
+</svg>

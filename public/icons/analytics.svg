@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="60px" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3076" data-name="Rectangle 3076" width="24" height="24" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_700" data-name="Mask Group 700" clip-path="url(#clip-path)">
+    <g id="icons8-pie-chart" transform="translate(2.31 2.31)">
+      <circle id="Ellipse_392" data-name="Ellipse 392" cx="9" cy="9" r="9" transform="translate(0 1.38)" fill="#586392"/>
+      <path id="Path_14249" data-name="Path 14249" d="M24,24l10.366.009a10,10,0,0,1-1.091,4.528,10.21,10.21,0,0,1-3.036,3.576Z" transform="translate(-14.986 -13.634)" fill="#3a95f7"/>
+      <path id="Path_14250" data-name="Path 14250" d="M24.018,11.366,24,1h.018A10.407,10.407,0,0,1,34.366,11.366Z" transform="translate(-14.986 -1)" fill="#9299b8"/>
+      <path id="Path_14251" data-name="Path 14251" d="M24,4l.016,9.014h9A9.014,9.014,0,0,0,24,4Z" transform="translate(-14.989 -2.648)" fill="#9299b8"/>
+      <path id="Path_14252" data-name="Path 14252" d="M33.014,24.007,24,24l5.49,7.138A8.989,8.989,0,0,0,33.014,24.007Z" transform="translate(-14.986 -13.634)" fill="#3a95f7"/>
+    </g>
+  </g>
+</svg>

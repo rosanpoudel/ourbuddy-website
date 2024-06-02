@@ -1,0 +1,77 @@
+<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="60px" height="60px"
+                  viewBox="0 0 40 40"
+                >
+                  <defs>
+                    <clipPath id="clip-path">
+                      <rect
+                        id="Rectangle_3725"
+                        data-name="Rectangle 3725"
+                        width="40"
+                        height="40"
+                        fill="#fff"
+                        stroke="#707070"
+                        stroke-width="1"
+                        opacity="0.601"
+                      />
+                    </clipPath>
+                  </defs>
+                  <g
+                    id="Mask_Group_865"
+                    data-name="Mask Group 865"
+                    clip-path="url(#clip-path)"
+                  >
+                    <g id="icons8-apply" transform="translate(5.104 2.421)">
+                      <path
+                        id="Path_15028"
+                        data-name="Path 15028"
+                        d="M27.222,20.768H13.384a1.384,1.384,0,0,1,0-2.768H27.222a1.384,1.384,0,1,1,0,2.768Z"
+                        transform="translate(-7.157 -6.193)"
+                        fill="#f2f3f6"
+                      />
+                      <path
+                        id="Path_15029"
+                        data-name="Path 15029"
+                        d="M31.292,38.379H5l1.124-4.35A7.143,7.143,0,0,1,13.179,28h9.934a7.143,7.143,0,0,1,7.055,6.029Z"
+                        transform="translate(-5 -9.274)"
+                        fill="#445781"
+                      />
+                      <path
+                        id="Path_15030"
+                        data-name="Path 15030"
+                        d="M20.72,22.3h0a7.019,7.019,0,0,1-6.969-6.183l-.345-2.871A7.365,7.365,0,0,1,20.72,5h0a7.366,7.366,0,0,1,7.313,8.244l-.345,2.871A7.019,7.019,0,0,1,20.72,22.3Z"
+                        transform="translate(-7.573 -2.188)"
+                        fill="#f2f3f6"
+                      />
+                      <g
+                        id="Group_12635"
+                        data-name="Group 12635"
+                        transform="translate(14.53 18.726)"
+                      >
+                        <path
+                          id="Path_15031"
+                          data-name="Path 15031"
+                          d="M39.838,34.919A6.919,6.919,0,1,1,32.919,28,6.939,6.939,0,0,1,39.838,34.919Z"
+                          transform="translate(-26 -28)"
+                          fill="#d9e9ff"
+                        />
+                        <path
+                          id="Union_4"
+                          data-name="Union 4"
+                          d="M3.256,9.414,0,6.292l1.343-1.4L4.13,7.568,11.423,0l.963.931.43.414L10.6,3.648l.033.064L4.2,10.354Z"
+                          transform="translate(2.445 0.093)"
+                          fill="#3a95f7"
+                        />
+                      </g>
+                      <path
+                        id="Path_15034"
+                        data-name="Path 15034"
+                        d="M10616.54,2617.9c-.079-.979-1.133-3.625,2.257-4.855.085.037,3.662,2.776,8.831,0,.66.4,2.479.82,2.605,6.508.813-1.519,4.29-9-4-12.012a4.187,4.187,0,0,1,1.85-.234c-.647-.4-6.037-2.067-9.114,1.01-.17.043-6.9.487-2.356,11.663A15.3,15.3,0,0,0,10616.54,2617.9Z"
+                        transform="translate(-10610.202 -2606.496)"
+                        fill="#445781"
+                      />
+                    </g>
+                  </g>
+                </svg>

@@ -1,0 +1,41 @@
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+    font-family: "Manrope", sans-serif;
+}
+input,textarea{
+    @apply focus:outline-none focus:ring ;
+}
+
+
+.ytp-pause-overlay, .ytp-impression-link, .ytp-impression-link-content{
+    display:none !important;
+}
+
+
+
+
+
+
+
+.primary-gradient-bg{
+    background: linear-gradient(-80deg,rgba(16,27,83,.65),rgba(16,27,83,.96),#101b53);
+}
+.hero-bg:after{
+    background: linear-gradient(270deg,#2a1e5c,#1276ff);
+    bottom: 0;
+    content: "";
+    height: 5px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+
+

@@ -1,0 +1,72 @@
+<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <defs>
+                    <clipPath id="clip-path">
+                      <rect
+                        id="Rectangle_4279"
+                        data-name="Rectangle 4279"
+                        width="24"
+                        height="24"
+                        transform="translate(0.163)"
+                        fill="#fff"
+                        stroke="#707070"
+                        stroke-width="1"
+                      />
+                    </clipPath>
+                  </defs>
+                  <g
+                    id="Mask_Group_12953"
+                    data-name="Mask Group 12953"
+                    transform="translate(-0.163)"
+                    clip-path="url(#clip-path)"
+                  >
+                    <g
+                      id="icons8-commercial"
+                      transform="translate(0.163 -0.125)"
+                    >
+                      <path
+                        id="Path_15537"
+                        data-name="Path 15537"
+                        d="M40.309,21.653V17.735L38,17v5.388Z"
+                        transform="translate(-20.915 -7.382)"
+                        fill="#586392"
+                      />
+                      <path
+                        id="Path_15538"
+                        data-name="Path 15538"
+                        d="M26.467,19.9,18,15.746V10.358L26.467,6.2Z"
+                        transform="translate(-8.612 -0.739)"
+                        fill="#3a95f7"
+                      />
+                      <rect
+                        id="Rectangle_4275"
+                        data-name="Rectangle 4275"
+                        width="2"
+                        height="15"
+                        transform="translate(16 4.624)"
+                        fill="#3a95f7"
+                      />
+                      <rect
+                        id="Rectangle_4276"
+                        data-name="Rectangle 4276"
+                        width="2.309"
+                        height="5.138"
+                        transform="translate(5.539 12.947)"
+                        fill="#586392"
+                      />
+                      <rect
+                        id="Rectangle_4277"
+                        data-name="Rectangle 4277"
+                        width="5"
+                        height="5"
+                        transform="translate(4 9.624)"
+                        fill="#586392"
+                      />
+                    </g>
+                  </g>
+                </svg>

@@ -1,0 +1,126 @@
+<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                 width="60px" height="60px"
+                  viewBox="0 0 40 40"
+                >
+                  <defs>
+                    <clipPath id="clip-path">
+                      <rect
+                        id="Rectangle_2726"
+                        data-name="Rectangle 2726"
+                        width="40"
+                        height="40"
+                        fill="#fff"
+                        stroke="#707070"
+                        stroke-width="1"
+                        opacity="0.601"
+                      />
+                    </clipPath>
+                  </defs>
+                  <g
+                    id="Mask_Group_643"
+                    data-name="Mask Group 643"
+                    clip-path="url(#clip-path)"
+                  >
+                    <g id="icons8-workflow" transform="translate(4.583 4.166)">
+                      <rect
+                        id="Rectangle_2713"
+                        data-name="Rectangle 2713"
+                        width="6.667"
+                        height="3.333"
+                        transform="translate(26.7 8.617) rotate(90)"
+                        fill="#445781"
+                      />
+                      <rect
+                        id="Rectangle_2714"
+                        data-name="Rectangle 2714"
+                        width="6.667"
+                        height="3.333"
+                        transform="translate(8.083 4.167)"
+                        fill="#445781"
+                      />
+                      <rect
+                        id="Rectangle_2715"
+                        data-name="Rectangle 2715"
+                        width="6.667"
+                        height="3.333"
+                        transform="translate(3.333 22.5) rotate(-90)"
+                        fill="#445781"
+                      />
+                      <rect
+                        id="Rectangle_2716"
+                        data-name="Rectangle 2716"
+                        width="8.25"
+                        height="8.25"
+                        transform="matrix(0.707, -0.707, 0.707, 0.707, 19.225, 5.834)"
+                        fill="#3a95f7"
+                      />
+                      <path
+                        id="Path_14183"
+                        data-name="Path 14183"
+                        d="M11,7a5,5,0,1,0,5,5A5.015,5.015,0,0,0,11,7Z"
+                        transform="translate(-6 -6.166)"
+                        fill="#3a95f7"
+                      />
+                      <rect
+                        id="Rectangle_2717"
+                        data-name="Rectangle 2717"
+                        width="8.333"
+                        height="8.333"
+                        transform="translate(0.833 20.834)"
+                        fill="#3a95f7"
+                      />
+                      <path
+                        id="Path_14184"
+                        data-name="Path 14184"
+                        d="M35,30a5,5,0,1,0,5,5A5.015,5.015,0,0,0,35,30Z"
+                        transform="translate(-10 -10)"
+                        fill="#3a95f7"
+                      />
+                      <rect
+                        id="Rectangle_2718"
+                        data-name="Rectangle 2718"
+                        width="3.333"
+                        height="2.5"
+                        transform="translate(3.333 20.834)"
+                        fill="#3a95f7"
+                      />
+                      <path
+                        id="Path_14185"
+                        data-name="Path 14185"
+                        d="M11.167,21,7,25.167h8.333Z"
+                        transform="translate(-6.167 -8.5)"
+                        fill="#445781"
+                      />
+                      <path
+                        id="Path_14186"
+                        data-name="Path 14186"
+                        d="M15,14.333h2.25a5.681,5.681,0,0,0,0-3.333H15Z"
+                        transform="translate(-7.5 -6.833)"
+                        fill="#3a95f7"
+                      />
+                      <path
+                        id="Path_14187"
+                        data-name="Path 14187"
+                        d="M26.867,12.167,22.7,8v8.333Z"
+                        transform="translate(-8.783 -6.333)"
+                        fill="#445781"
+                      />
+                      <path
+                        id="Path_14188"
+                        data-name="Path 14188"
+                        d="M34,17.808l1.683,1.808,1.683-1.808V16H34Z"
+                        transform="translate(-10.667 -7.666)"
+                        fill="#3a95f7"
+                      />
+                      <path
+                        id="Path_14189"
+                        data-name="Path 14189"
+                        d="M35.167,27.467,39.333,23.3H31Z"
+                        transform="translate(-10.167 -8.883)"
+                        fill="#445781"
+                      />
+                    </g>
+                  </g>
+                </svg>
