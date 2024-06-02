@@ -19,9 +19,9 @@ const HeroSection = () => {
               and growth with our innovative SaaS platform.
             </p>
             <div className="flex justify-center">
-              <button
-                type="button"
-                className="flex items-center jsutify-center px-8 py-3 rounded-lg bg-[#1276ff] text-[#ffffff] hover:text-[#1276ff]  border border-[#1276ff]  hover:bg-[transparent] transition-all ease-in duration-800"
+              <a
+                href="#contact"
+                className="flex items-center jsutify-center px-8 py-3 rounded-lg bg-[#1276ff] text-[#ffffff] font-[500] hover:text-[#1276ff]  border border-[#1276ff]  hover:bg-[transparent] transition-all ease-in-out  duration-1000"
               >
                 Book a demo
                 <svg
@@ -39,7 +39,7 @@ const HeroSection = () => {
                     d="M1 5h12m0 0L9 1m4 4L9 9"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
 

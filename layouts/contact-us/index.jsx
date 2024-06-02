@@ -73,7 +73,7 @@ const ContactUs = () => {
               </div>
               <button
                 type="button"
-                className="flex items-center jsutify-center px-8 py-3 rounded-lg bg-[#1276ff] text-[#ffffff] hover:text-[#1276ff]  border border-[#1276ff]  hover:bg-[transparent] transition-all ease-in duration-800"
+                className="flex items-center jsutify-center px-8 py-3 rounded-lg bg-[#1276ff] text-[#ffffff] font-[500] hover:text-[#1276ff]  border border-[#1276ff]  hover:bg-[transparent] transition-all ease-in-out  duration-1000"
               >
                 Submit
                 <svg

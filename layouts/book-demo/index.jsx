@@ -28,7 +28,7 @@ const BookDemo = ({ title, description, btnText }) => {
             <div className="text-center">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center text-[#ffffff] px-8 py-3 rounded-lg border border-[#ffffff] hover:text-[#ffffff] hover:border-[#1276ff] hover:bg-[#1276ff] transition-all ease-in duration-800 "
+                className="inline-flex items-center justify-center text-[#ffffff] px-8 py-3 rounded-lg border border-[#ffffff] font-[500] hover:text-[#ffffff] hover:border-[#1276ff] hover:bg-[#1276ff] transition-all ease-in-out  duration-1000 "
               >
                 {btnText}
                 <svg
