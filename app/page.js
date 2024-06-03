@@ -9,7 +9,7 @@ import WhyOurBuddy from "@/layouts/whyOurBuddy";
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <HeroSection />
       <WhyOurBuddy />
       <BookDemo

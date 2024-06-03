@@ -1,9 +1,9 @@
 import React from "react";
-import SectionTitle from "../../components/common/sectionTitle";
+import SectionTitle from "../../components/sectionTitle";
 
 const WhyCard = ({ title, description, icon }) => {
   return (
-    <div className="bg-white rounded-3xl shadow-2xl shadow-gray-100 px-10 py-12  hover:-translate-y-4 transition-all duration-700">
+    <div className="bg-white rounded-3xl shadow-2xl shadow-gray-100 px-5 py-8 xl:px-10 xl:py-12  hover:-translate-y-4 transition-all duration-700">
       <div className="mb-[35px]">
         <img width="60px" height="60px" src={icon} alt={title} />
       </div>
@@ -17,7 +17,7 @@ const WhyCard = ({ title, description, icon }) => {
 
 const WhyOurBuddy = () => {
   return (
-    <div className="py-[120px] bg-[#f8f8fc]" id="benefits">
+    <div className="content-section bg-[#f8f8fc]" id="benefits">
       <div className="container ">
         <div className="">
           <SectionTitle
@@ -27,7 +27,7 @@ const WhyOurBuddy = () => {
               brokerage's success."
           />
 
-          <div className="grid grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 xl:gap-12">
             <WhyCard
               title="Close More Sales"
               description="Increase your conversion rates with personalized video messages that resonate with

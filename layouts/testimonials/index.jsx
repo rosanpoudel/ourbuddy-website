@@ -1,9 +1,9 @@
-import SectionTitle from "@/components/common/sectionTitle";
+import SectionTitle from "@/components/sectionTitle";
 import React from "react";
 
 const TestimonialCard = ({ title, clientName, company }) => {
   return (
-    <div className=" bg-white flex flex-col  justify-between rounded-3xl shadow-2xl shadow-gray-100 px-10 py-12  hover:-translate-y-4 transition-all duration-700">
+    <div className="bg-white flex flex-col justify-between rounded-3xl shadow-2xl shadow-gray-100 px-8 xl:px-10 py-10 xl:py-12  hover:-translate-y-4 transition-all duration-700">
       <div>
         <img src="/images/quotes.svg" alt={title} />
       </div>
@@ -38,7 +38,7 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="py-[120px] bg-[#f8f8fc]" id="testimonials">
+    <div className="content-section bg-[#f8f8fc]" id="testimonials">
       <div className="container">
         <SectionTitle
           heading="What Our Clients Are Saying"
@@ -46,7 +46,7 @@ const Testimonials = () => {
           description="Learn how Ourbuddy.ai is revolutionizing insurance brokerages."
         />
 
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid xl:grid-cols-3 gap-10">
           {data?.map((d, i) => {
             return (
               <TestimonialCard

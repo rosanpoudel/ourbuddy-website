@@ -2,9 +2,9 @@ import React from "react";
 
 const BookDemo = ({ title, description, btnText }) => {
   return (
-    <div className="py-[120px]">
+    <div className="content-section">
       <div className="container">
-        <div className="relative max-w-[90%] mx-auto">
+        <div className="relative xl:max-w-[90%] mx-auto">
           <div className="absolute w-full h-full top-0 left-0 z-[-1]">
             <img
               src="/images/cta-bg.jpg"
@@ -17,13 +17,15 @@ const BookDemo = ({ title, description, btnText }) => {
               background:
                 "linear-gradient(-80deg,rgba(16,27,83,.65),rgba(16,27,83,.96),#101b53)",
             }}
-            className="py-[60px] z-1 rounded-2xl"
+            className="px-4 py-[40px] xl:py-[60px] z-1 rounded-2xl"
           >
             <div className="text-center mb-[32px]">
-              <h5 className="text-white text-[32px] mb-[16px] font-bold">
+              <h5 className="text-white text-[24px] xl:text-[32px] mb-[16px] font-bold">
                 {title}
               </h5>
-              <p className="text-white text-[18px] font-md">{description}</p>
+              <p className="text-white text-[16px] xl:text-[18px] font-md">
+                {description}
+              </p>
             </div>
             <div className="text-center">
               <a

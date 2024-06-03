@@ -1,12 +1,12 @@
-import SectionTitle from "@/components/common/sectionTitle";
+import SectionTitle from "@/components/sectionTitle";
 import React from "react";
 
 const UniqueAdvantage = () => {
   return (
-    <div className="py-[120px]" id="advantages">
+    <div className="content-section" id="advantages">
       <div className="container">
-        <div className="grid grid-cols-10 gap-20">
-          <div className="col-span-4 flex flex-col justify-center">
+        <div className="grid xl:grid-cols-10 gap-10 xl:gap-20">
+          <div className="xl:col-span-4 flex flex-col justify-center">
             <SectionTitle
               heading="Our Unique Advantage"
               subHeading="Advantages"
@@ -19,7 +19,7 @@ const UniqueAdvantage = () => {
               methods.
             </p>
           </div>
-          <div className="col-span-6">
+          <div className="xl:col-span-6">
             <img
               src="/images/advantage.png"
               className="rounded-3xl"

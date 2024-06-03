@@ -27,6 +27,7 @@ input,textarea{
 .primary-gradient-bg{
     background: linear-gradient(-80deg,rgba(16,27,83,.65),rgba(16,27,83,.96),#101b53);
 }
+
 .hero-bg:after{
     background: linear-gradient(270deg,#2a1e5c,#1276ff);
     bottom: 0;
@@ -35,6 +36,11 @@ input,textarea{
     left: 0;
     position: absolute;
     width: 100%;
+}
+
+
+.content-section{
+    @apply py-[60px] xl:py-[120px]
 }
 
 

@@ -1,4 +1,4 @@
-import React from "react";
+import HamburgerMenu from "@/components/hamburger-menu";
 
 const Header = () => {
   const menu = [
@@ -8,12 +8,13 @@ const Header = () => {
     { name: "Testimonials", href: "#testimonials" },
     { name: "Pricing", href: "#pricing" },
   ];
+
   return (
-    <header className=" w-full flex justify-between items-center px-8  py-4">
+    <header className="w-full flex justify-between items-center xl:px-8  py-6 xl:py-4">
       <div className="text-2xl">
         <img src="/images/logo.svg" className="max-w-[190px] " />
       </div>
-      <div className="flex items-center space-x-10">
+      <div className="hidden xl:flex items-center space-x-10">
         {menu?.map((m, i) => (
           <a
             key={i}
@@ -24,7 +25,7 @@ const Header = () => {
           </a>
         ))}
       </div>
-      <div className="flex items-center">
+      <div className="hidden xl:flex items-center">
         <a
           href="#contact"
           className="flex items-center justify-center text-[#1276ff] font-[500] px-8 py-3 rounded-lg  border border-[#1276ff] hover:text-[#ffffff] hover:border-[#1276ff] hover:bg-[#1276ff] transition-all ease-in-out  duration-1000 "
@@ -54,6 +55,9 @@ const Header = () => {
           Login
         </a>
       </div>
+
+      {/* hamburger menu */}
+      <HamburgerMenu />
     </header>
   );
 };

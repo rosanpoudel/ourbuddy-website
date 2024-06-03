@@ -1,12 +1,12 @@
 import React from "react";
-import SectionTitle from "../../components/common/sectionTitle";
+import SectionTitle from "../../components/sectionTitle";
 
 const ContactUs = () => {
   return (
-    <div className="py-[120px] bg-[#f8f8fc]" id="contact">
+    <div className="content-section bg-[#f8f8fc]" id="contact">
       <div className="container ">
-        <div className="grid grid-cols-10 gap-16">
-          <div className="col-span-6">
+        <div className="grid xl:grid-cols-10 gap-10 xl:gap-16">
+          <div className="xl:col-span-6">
             <SectionTitle
               heading="Contact us"
               description="Get in touch with us by submitting the form"
@@ -73,9 +73,9 @@ const ContactUs = () => {
               </div>
               <button
                 type="button"
-                className="flex items-center jsutify-center px-8 py-3 rounded-lg bg-[#1276ff] text-[#ffffff] font-[500] hover:text-[#1276ff]  border border-[#1276ff]  hover:bg-[transparent] transition-all ease-in-out  duration-1000"
+                className="w-full xl:w-auto flex items-center justify-center px-8 py-3 rounded-lg bg-[#1276ff] text-[#ffffff] font-[500] hover:text-[#1276ff]  border border-[#1276ff]  hover:bg-[transparent] transition-all ease-in-out  duration-1000"
               >
-                Submit
+                Send message
                 <svg
                   className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
                   aria-hidden="true"
@@ -96,7 +96,7 @@ const ContactUs = () => {
           </div>
 
           {/* address */}
-          <div className="col-span-4 flex flex-col justify-center item-center">
+          <div className="xl:col-span-4 flex flex-col justify-center item-center">
             <>
               {/* company */}
               <div className="flex flex-col items-center justify-center">
