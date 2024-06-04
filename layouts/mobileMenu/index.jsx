@@ -24,25 +24,33 @@ const MobileMenu = () => {
 
   return (
     <div>
-      <HamburgerMenu onClick={handleHamburgerClick} isOpen={isOpen} />
+      <div
+        className={
+          isOpen
+            ? "hamburger-active-color absolute top-[20px] right-[22vw] z-[999999]"
+            : ""
+        }
+      >
+        <HamburgerMenu onClick={handleHamburgerClick} isOpen={isOpen} />
+      </div>
       {isOpen && (
         <>
           <div
-            className="fixed inset-0 bg-black opacity-50 z-40"
+            className="fixed inset-0 bg-black opacity-50 z-40 "
             onClick={handleHamburgerClick}
           />
 
           <div
             className={`${
               isOpen ? "left-0" : "left-[-100vw]"
-            } fixed px-10  top-0 h-[100vh] w-[82vw] bg-[#ffffff] z-50`}
+            } mobile-menu-bg fixed px-10  top-0 h-[100vh] w-[82vw] bg-[#ffffff] z-50`}
           >
-            <div className="mt-10">
+            <div className="mt-20">
               {menu?.map((m, i) => (
                 <a
                   key={i}
                   href={m?.href}
-                  className="block text-[#293c67] text-[20px] mb-4 font-[500] hover:text-[#1276ff] py-3"
+                  className="block text-[#d7d7d7] text-[20px] mb-4 font-[500] hover:text-[#1276ff] py-3"
                   onClick={handleHamburgerClick}
                 >
                   {m?.name}
@@ -53,7 +61,7 @@ const MobileMenu = () => {
               <a
                 onClick={handleHamburgerClick}
                 href="#contact"
-                className="w-full flex items-center justify-center text-[#1276ff] font-[500] px-8 py-3 mb-5 rounded-lg  border border-[#1276ff] hover:text-[#ffffff] hover:border-[#1276ff] hover:bg-[#1276ff] transition-all ease-in-out  duration-1000 "
+                className="w-full flex items-center justify-center text-[#ffffff] font-[500] px-8 py-3 mb-5 rounded-lg  border border-[#ffffff] hover:text-[#ffffff] hover:border-[#1276ff] hover:bg-[#1276ff] transition-all ease-in-out  duration-1000 "
               >
                 Contact sales
                 <svg

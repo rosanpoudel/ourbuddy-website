@@ -23,14 +23,14 @@ const BookDemo = ({ title, description, btnText }) => {
               <h5 className="text-white text-[24px] xl:text-[32px] mb-[16px] font-bold">
                 {title}
               </h5>
-              <p className="text-white text-[16px] xl:text-[18px] font-md">
+              <p className="text-white text-[14px] xl:text-[18px] font-md">
                 {description}
               </p>
             </div>
             <div className="text-center">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center text-[#ffffff] px-8 py-3 rounded-lg border border-[#ffffff] font-[500] hover:text-[#ffffff] hover:border-[#1276ff] hover:bg-[#1276ff] transition-all ease-in-out  duration-1000 "
+                className="inline-flex items-center justify-center text-[14px] xl:text-[16px] text-[#ffffff] px-8 py-3 rounded-lg border border-[#ffffff] font-[500] hover:text-[#ffffff] hover:border-[#1276ff] hover:bg-[#1276ff] transition-all ease-in-out  duration-1000 "
               >
                 {btnText}
                 <svg

@@ -25,8 +25,13 @@ input,textarea{
 
 
 .primary-gradient-bg{
-    background: linear-gradient(-80deg,rgba(16,27,83,.65),rgba(16,27,83,.96),#101b53);
+    background: linear-gradient(-80deg,rgba(16,27,83,.80),rgba(16,27,83,.96),#101b53);
 }
+
+.mobile-menu-bg{
+    background: linear-gradient(0deg,rgba(16,27,83,.80),rgba(16,27,83,.96),#101b53);
+}
+
 
 .hero-bg:after{
     background: linear-gradient(270deg,#2a1e5c,#1276ff);

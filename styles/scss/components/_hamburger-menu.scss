@@ -1,79 +1,84 @@
-.navigation-checkbox {
-    display: none;
-  }
-  
-  .navigation-toggle {
-    width: 40px;
-    height: 40px;
-    display: block;
-    position: relative;
-    cursor: pointer;
-  }
-  
-  
-  
-  .navigation-toggle-icon {
-    border-bottom: 6px solid #1e266d;
-    padding-top: 17px;
-    display: block;
-  }
-  
-  .navigation-toggle-icon:before,
-  .navigation-toggle-icon:after {
-    border-top: 6px solid #1e266d;
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
-  
-  .navigation-toggle-icon:before {
-    top: 4px;
-  }
-  
-  .navigation-toggle-icon:after {
-    bottom: 4px;
-  }
-  
-  /*
+.hamburger-checkbox {
+  display: none;
+}
+
+.hamburger-toggle {
+  width: 30px;
+  height: 24px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger-toggle-icon {
+  border-bottom: 2px solid #1e266d;
+  padding-top: 10px;
+  display: block;
+}
+
+.hamburger-toggle-icon:before,
+.hamburger-toggle-icon:after {
+  border-top: 2px solid #1e266d;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.hamburger-toggle-icon:before {
+  top: 0px;
+}
+
+.hamburger-toggle-icon:after {
+  bottom: 0px;
+}
+
+/*
    * This is where all the animation happens
    */
-   .navigation-toggle-icon,
-   .navigation-toggle-icon:before,
-   .navigation-toggle-icon:after {
-     transition-property: transform, border-color;
-     transition-duration: 0.25s;
-     transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
-   }
-   
-   .navigation-toggle-icon {
-     transition-delay: 0.125s;
-   }
-   
-   .navigation-toggle-icon:before,
-   .navigation-toggle-icon:after {
-     transition-delay: 0s;
-     transform-origin: center;
-   }
-   
-   .navigation-checkbox:checked + .navigation-toggle .navigation-toggle-icon {
-     transition-delay: 0s;
-   }
-   
-   .navigation-checkbox:checked + .navigation-toggle .navigation-toggle-icon:before,
-   .navigation-checkbox:checked + .navigation-toggle .navigation-toggle-icon:after {
-     transition-delay: 0.125s;
-   }
-   
-   .navigation-checkbox:checked + .navigation-toggle .navigation-toggle-icon:before {
-     transform: translateY(13px) rotate(135deg);
-   }
-   
-   .navigation-checkbox:checked + .navigation-toggle .navigation-toggle-icon {
-     border-color: transparent;
-   }
-   
-   .navigation-checkbox:checked + .navigation-toggle .navigation-toggle-icon:after {
-     transform: translateY(-13px) rotate(-135deg);
-   }
-   
+.hamburger-toggle-icon,
+.hamburger-toggle-icon:before,
+.hamburger-toggle-icon:after {
+  transition-property: transform, border-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+}
+
+.hamburger-toggle-icon {
+  transition-delay: 0.125s;
+}
+
+.hamburger-toggle-icon:before,
+.hamburger-toggle-icon:after {
+  transition-delay: 0s;
+  transform-origin: center;
+}
+
+.hamburger-checkbox:checked + .hamburger-toggle .hamburger-toggle-icon {
+  transition-delay: 0s;
+}
+
+.hamburger-checkbox:checked + .hamburger-toggle .hamburger-toggle-icon:before,
+.hamburger-checkbox:checked + .hamburger-toggle .hamburger-toggle-icon:after {
+  transition-delay: 0.125s;
+}
+
+.hamburger-checkbox:checked + .hamburger-toggle .hamburger-toggle-icon:before {
+  transform: translateY(9px) rotate(135deg);
+}
+
+.hamburger-checkbox:checked + .hamburger-toggle .hamburger-toggle-icon {
+  border-color: transparent;
+}
+
+.hamburger-checkbox:checked + .hamburger-toggle .hamburger-toggle-icon:after {
+  transform: translateY(-13px) rotate(-135deg);
+}
+
+.hamburger-active-color {
+  .hamburger-toggle-icon,
+  .hamburger-toggle-icon:before,
+  .hamburger-toggle-icon:after {
+    border-color: #ffffff;
+  }
+}

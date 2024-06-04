@@ -3,7 +3,7 @@ import Header from "../header";
 
 const HeroSection = () => {
   return (
-    <div className="hero-bg pb-20 relative z-[1]">
+    <div className="hero-bg pb-10 xl:pb-20 relative z-[1]">
       <div className="absolute w-full h-full left-0 top-0 z-[-1]">
         <img src="/images/hero-bg.png" className="w-full h-full object-cover" />
       </div>
@@ -11,11 +11,11 @@ const HeroSection = () => {
         <Header />
 
         <div>
-          <div className="max-w-[700px] mx-auto text-center mt-5 xl:mt-12 mb-12 xl:mb-16">
-            <h1 className="text-[36px] xl:text-[44px] text-[#1e266d] font-[800] leading-[1.3] tracking-wide">
+          <div className="max-w-[700px] mx-auto text-center mt-3 xl:mt-12 mb-10 xl:mb-16">
+            <h1 className="px-4 text-[26px] xl:text-[44px] text-[#1e266d] font-[800] leading-[1.3] tracking-wide">
               Transform Your Insurance Brokerage with Ourbuddy.ai
             </h1>
-            <p className="mt-4 mb-8 text-[16px] xl:text-[18px] text-[#293c67]">
+            <p className="mt-4 mb-5 xl:mb-8 text-[14px] xl:text-[18px] text-[#293c67]">
               Unlock new levels of efficiency, client satisfaction, <br />
               and growth with our innovative SaaS platform.
             </p>

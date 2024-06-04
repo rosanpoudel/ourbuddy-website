@@ -5,17 +5,23 @@ const TestimonialCard = ({ title, clientName, company }) => {
   return (
     <div className="bg-white flex flex-col justify-between rounded-3xl shadow-2xl shadow-gray-100 px-8 xl:px-10 py-10 xl:py-12  hover:-translate-y-4 transition-all duration-700">
       <div>
-        <img src="/images/quotes.svg" alt={title} />
+        <img
+          className="w-[35px] h-[40px] xl:w-[55px] xl:h-[60px]"
+          src="/images/quotes.svg"
+          alt={title}
+        />
       </div>
-      <div className="text-center leading-10 tracking-wider text-[20px] text-[#6e7085] italic mt-[50px] mb-[30px]">
+      <div className="text-center leading-10 tracking-wider text-[16px] xl:text-[20px] text-[#6e7085] italic mt-[30px] xl:mt-[50px] mb-[30px]">
         {title}
       </div>
 
       <div className="text-center">
-        <p className="text-[#333333] text-[20px] font-[600] tracking-widest">
+        <p className="text-[#333333] text-[18px] xl:text-[20px] font-[600] tracking-widest">
           {clientName}
         </p>
-        <p className="text-[#a1a1a1] text-[16px] font-[500]">{company}</p>
+        <p className="text-[#a1a1a1] text-[14px] xl:text-[16px] font-[500]">
+          {company}
+        </p>
       </div>
     </div>
   );
