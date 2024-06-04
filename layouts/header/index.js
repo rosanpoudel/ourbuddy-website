@@ -1,4 +1,5 @@
 import HamburgerMenu from "@/components/hamburger-menu";
+import MobileMenu from "../mobileMenu";
 
 const Header = () => {
   const menu = [
@@ -57,7 +58,7 @@ const Header = () => {
       </div>
 
       {/* hamburger menu */}
-      <HamburgerMenu />
+      <MobileMenu />
     </header>
   );
 };
