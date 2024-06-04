@@ -51,6 +51,7 @@ const MobileMenu = () => {
             </div>
             <div className="mt-10">
               <a
+                onClick={handleHamburgerClick}
                 href="#contact"
                 className="w-full flex items-center justify-center text-[#1276ff] font-[500] px-8 py-3 mb-5 rounded-lg  border border-[#1276ff] hover:text-[#ffffff] hover:border-[#1276ff] hover:bg-[#1276ff] transition-all ease-in-out  duration-1000 "
               >
@@ -73,6 +74,7 @@ const MobileMenu = () => {
               </a>
 
               <a
+                onClick={handleHamburgerClick}
                 href="#"
                 className="w-full flex items-center justify-center px-8 py-3 rounded-lg bg-[#1276ff] text-[#ffffff] font-[500] hover:text-[#1276ff]  border border-[#1276ff]  hover:bg-[transparent] transition-all ease-in-out  duration-1000"
               >

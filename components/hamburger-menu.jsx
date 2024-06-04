@@ -3,7 +3,7 @@ import React from "react";
 
 const HamburgerMenu = ({ onClick, isOpen }) => {
   return (
-    <div className="xl:hidden navigation-bar" onClick={onClick}>
+    <div className=" xl:hidden navigation-bar" onClick={onClick}>
       <input
         id="navigation-checkbox"
         className="navigation-checkbox"
