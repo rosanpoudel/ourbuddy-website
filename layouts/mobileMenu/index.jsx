@@ -23,7 +23,7 @@ const MobileMenu = () => {
   };
 
   return (
-    <div>
+    <div className="xl:hidden">
       <div
         className={
           isOpen

@@ -5,7 +5,7 @@ const HamburgerMenu = ({ onClick, isOpen }) => {
   return (
     <>
       {isOpen ? (
-        <div className=" xl:hidden hamburger-menu" onClick={onClick}>
+        <div className=" hamburger-menu" onClick={onClick}>
           <input
             id="hamburger-checkbox"
             className="hamburger-checkbox"
@@ -23,7 +23,7 @@ const HamburgerMenu = ({ onClick, isOpen }) => {
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-10 h-10 text-[#1e266d] "
+          class="w-10 h-10 text-[#1e266d]"
           onClick={onClick}
         >
           <path
