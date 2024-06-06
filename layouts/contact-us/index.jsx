@@ -1,7 +1,11 @@
-import React from "react";
+"use client";
+import { useInView } from "react-intersection-observer";
 import SectionTitle from "../../components/sectionTitle";
 
 const ContactUs = () => {
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
   return (
     <div className="content-section bg-[#f8f8fc]" id="contact">
       <div className="container ">
@@ -13,7 +17,7 @@ const ContactUs = () => {
               subHeading="Get in touch"
             />
 
-            <form>
+            <form ref={ref} className={`${inView ? "fadeInFromLeft" : ""}`}>
               <div className="mb-8">
                 <label
                   htmlFor="email"
@@ -96,7 +100,12 @@ const ContactUs = () => {
           </div>
 
           {/* address */}
-          <div className="xl:col-span-4 flex flex-col justify-center item-center">
+          <div
+            ref={ref}
+            className={`${
+              inView ? "fadeInFromRight" : ""
+            } xl:col-span-4 flex flex-col justify-center item-center`}
+          >
             <>
               {/* company */}
               <div className="flex flex-col items-center justify-center">

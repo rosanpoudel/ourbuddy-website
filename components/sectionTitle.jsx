@@ -1,8 +1,17 @@
+"use client";
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
 const SectionTitle = ({ heading, subHeading, description }) => {
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
+
   return (
-    <div className="mb-[50px] xl:mb-[80px]">
+    <div
+      ref={ref}
+      className={` mb-[50px] xl:mb-[80px] ${inView ? "fadeInFromTop" : ""}`}
+    >
       <p className="text-[#445781] text-[14px] font-[500] tracking-widest uppercase">
         {subHeading}
       </p>

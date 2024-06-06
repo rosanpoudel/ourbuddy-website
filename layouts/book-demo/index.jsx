@@ -1,8 +1,13 @@
-import React from "react";
+"use client";
+
+import { useInView } from "react-intersection-observer";
 
 const BookDemo = ({ title, description, btnText }) => {
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
   return (
-    <div className="content-section">
+    <div ref={ref} className="content-section">
       <div className="container">
         <div className="relative xl:max-w-[90%] mx-auto">
           <div className="absolute w-full h-full top-0 left-0 z-[-1]">
@@ -19,7 +24,11 @@ const BookDemo = ({ title, description, btnText }) => {
             }}
             className="px-4 py-[40px] xl:py-[60px] z-1 rounded-2xl"
           >
-            <div className="text-center mb-[32px]">
+            <div
+              className={`${
+                inView ? "fadeInFromTop" : ""
+              } text-center mb-[32px]`}
+            >
               <h5 className="text-white text-[24px] xl:text-[32px] mb-[16px] font-bold">
                 {title}
               </h5>
@@ -27,7 +36,7 @@ const BookDemo = ({ title, description, btnText }) => {
                 {description}
               </p>
             </div>
-            <div className="text-center">
+            <div className={`${inView ? "fadeInFromBottom" : ""} text-center`}>
               <a
                 href="#contact"
                 className="inline-flex items-center justify-center text-[14px] xl:text-[16px] text-[#ffffff] px-8 py-3 rounded-lg border border-[#ffffff] font-[500] hover:text-[#ffffff] hover:border-[#1276ff] hover:bg-[#1276ff] transition-all ease-in-out  duration-1000 "

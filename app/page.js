@@ -1,3 +1,4 @@
+import ScrollToTop from "@/components/scrollToTop";
 import BookDemo from "@/layouts/book-demo";
 import ContactUs from "@/layouts/contact-us";
 import Features from "@/layouts/features";
@@ -28,6 +29,7 @@ export default function Home() {
       />
       <ContactUs />
       <Footer />
+      <ScrollToTop />
     </main>
   );
 }

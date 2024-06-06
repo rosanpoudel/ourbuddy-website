@@ -1,23 +1,6 @@
+import FeaturesCard from "@/components/featuresCrad";
 import React from "react";
 import SectionTitle from "../../components/sectionTitle";
-
-const WhyCard = ({ title, description, icon }) => {
-  return (
-    <div className="bg-white rounded-3xl shadow-2xl shadow-gray-100 px-8 py-10 xl:px-10 xl:py-12  hover:-translate-y-4 transition-all duration-700">
-      <div className="mb-[15px] xl:mb-[35px]">
-        <img
-          className="w-[40px] h-[40px] xl:w-[60px] xl:h-[60px]"
-          src={icon}
-          alt={title}
-        />
-      </div>
-      <h3 className="text-[#1e266d]  text-[18px] xl:text-[20px] mb-[10px] xl:mb-[16px] font-bold xl:font-[500] xl:min-h-[48px]">
-        {title}
-      </h3>
-      <p className="text-[#293c67] text-[16px] xl:text-[18px]">{description}</p>{" "}
-    </div>
-  );
-};
 
 const Features = () => {
   return (
@@ -31,44 +14,44 @@ const Features = () => {
           />
 
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 xl:gap-12">
-            <WhyCard
+            <FeaturesCard
               title="Personalized Video Messaging"
               description="Create and send tailored video messages to engage prospects and clients, boosting
               sales and relationship building."
               icon="/icons/video-message.svg"
             />
-            <WhyCard
+            <FeaturesCard
               title="Client Management"
               description="Seamlessly manage client information and communications in a centralized platform,
               enhancing organization and efficiency."
               icon="/icons/client.svg"
             />
 
-            <WhyCard
+            <FeaturesCard
               title="Policy Tracking"
               description="Effortlessly keep track of policies, renewals, and compliance to ensure nothing falls
               through the cracks."
               icon="/icons/policy-tracking.svg"
             />
-            <WhyCard
+            <FeaturesCard
               title="Analytics & Reporting"
               description="Gain valuable insights into your brokerage’s performance with real-time analytics and
               detailed reporting tools."
               icon="/icons/analytics.svg"
             />
-            <WhyCard
+            <FeaturesCard
               title="Secure Data Storage"
               description="Protect your sensitive client and business data with top-notch security measures,
               ensuring peace of mind."
               icon="/icons/storage.svg"
             />
-            <WhyCard
+            <FeaturesCard
               title="On-the-Go Video Creation"
               description="Develop training, learning, and solution videos quickly from anywhere, facilitating rapid
               communication and information sharing."
               icon="/icons/create-video.svg"
             />
-            <WhyCard
+            <FeaturesCard
               title="Central Video-Based Knowledge Hub"
               description="Establish a comprehensive video repository for training and reference, easily accessible
               to your entire team."
