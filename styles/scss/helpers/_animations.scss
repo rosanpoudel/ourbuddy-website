@@ -13,7 +13,7 @@
   @keyframes fadeInFromTop {
     0% {
       opacity: 0;
-      transform: translateY(-100px);
+      transform: translateY(-200px);
     }
     100% {
       opacity: 1;
@@ -30,7 +30,7 @@
   @keyframes fadeInFromBottom {
     0% {
       opacity: 0;
-      transform: translateY(100px);
+      transform: translateY(200px);
     }
     100% {
       opacity: 1;
@@ -79,19 +79,13 @@
 
   /* Bounce animation */
   @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-50px); /* Increase the translateY value for higher bounce */
-    }
-    60% {
-      transform: translateY(-25px); /* Increase the translateY value for higher bounce */
-    }
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-10px);}
+	60% {transform: translateY(-5px);}
   }
 
   .bounce {
-    animation: bounce 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: bounce 2s ease ;
   }
   
   

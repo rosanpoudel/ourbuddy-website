@@ -29,7 +29,7 @@ const ScrollToTop = () => {
     <>
       {isVisible && (
         <div
-          className="fadeInFromTop fixed flex items-center justify-center right-5 bottom-5  w-12 h-12 rounded-full cursor-pointer primary-gradient-bg"
+          className="bounce  fixed flex items-center justify-center right-5 bottom-5  w-12 h-12 rounded-full cursor-pointer primary-gradient-bg"
           onClick={scrollToTop}
         >
           <svg
