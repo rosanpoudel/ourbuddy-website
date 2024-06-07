@@ -13,14 +13,13 @@
   @keyframes fadeInFromTop {
     0% {
       opacity: 0;
-      transform: translateY(-200px);
+      transform: translateY(-50px);
     }
     100% {
       opacity: 1;
       transform: translateY(0);
     }
   }
-
   .fadeInFromTop{
     animation: fadeInFromTop 1s ease forwards;
   }
@@ -30,14 +29,14 @@
   @keyframes fadeInFromBottom {
     0% {
       opacity: 0;
-      transform: translateY(200px);
+      transform: translateY(50px);
     }
     100% {
       opacity: 1;
       transform: translateY(0);
     }
   }
-  
+
   .fadeInFromBottom {
     animation: fadeInFromBottom 1s ease forwards;
   }
@@ -47,14 +46,14 @@
   @keyframes fadeInFromLeft {
     0% {
       opacity: 0;
-      transform: translateX(-200px);
+      transform: translateX(-50px);
     }
     100% {
       opacity: 1;
       transform: translateX(0);
     }
   }
-  
+
   .fadeInFromLeft {
     animation: fadeInFromLeft 1s ease forwards;
   }
@@ -64,14 +63,14 @@
   @keyframes fadeInFromRight {
     0% {
       opacity: 0;
-      transform: translateX(200px);
+      transform: translateX(50px);
     }
     100% {
       opacity: 1;
       transform: translateX(0);
     }
   }
-  
+
   .fadeInFromRight {
     animation: fadeInFromRight 1s ease forwards;
   }
@@ -83,7 +82,6 @@
 	40% {transform: translateY(-10px);}
 	60% {transform: translateY(-5px);}
   }
-
   .bounce {
     animation: bounce 2s ease ;
   }
