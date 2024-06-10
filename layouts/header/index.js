@@ -1,4 +1,3 @@
-import HamburgerMenu from "@/components/hamburger-menu";
 import MobileMenu from "../mobileMenu";
 
 const Header = () => {
