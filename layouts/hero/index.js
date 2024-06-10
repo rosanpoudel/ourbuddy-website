@@ -3,7 +3,7 @@ import Header from "../header";
 
 const HeroSection = () => {
   return (
-    <div className="hero-bg pb-10 xl:pb-20 relative min-h-[100vh] z-[1]">
+    <div className="hero-bg pb-10 xl:pb-20 relative xl:h-[100vh] z-[1]">
       <div className="absolute w-full h-full left-0 top-0 z-[-1]">
         <img
           src="/images/hero-bg.png"
@@ -47,7 +47,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="fadeInFromBottom w-full xl:w-[700px] h-[450px] mx-auto">
+          <div className="fadeInFromBottom w-full xl:w-[700px] h-[350px] xl:h-[400px] mx-auto">
             <iframe
               className="rounded-lg w-full h-full "
               src="https://www.youtube.com/embed/iYRXAsz5Dtc"

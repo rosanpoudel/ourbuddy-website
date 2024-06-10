@@ -41,13 +41,16 @@ const ContactUsForm = ({ submitContactForm }) => {
       });
     } else {
       formRef.current.reset();
-      enqueueSnackbar("Your message is sent successfully!", {
-        variant: "info",
-        anchorOrigin: {
-          vertical: "bottom",
-          horizontal: "right",
-        },
-      });
+      enqueueSnackbar(
+        "Thank you for your inquiry! We will get back to you soon.",
+        {
+          variant: "info",
+          anchorOrigin: {
+            vertical: "bottom",
+            horizontal: "right",
+          },
+        }
+      );
     }
   };
 
