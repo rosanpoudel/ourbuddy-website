@@ -3,14 +3,9 @@ import Header from "../header";
 
 const HeroSection = () => {
   return (
-    <div className="hero-bg pb-10 xl:pb-20 relative z-[1]">
+    <div className="hero-bg pb-10 xl:pb-20 relative h-[100vh] z-[1]">
       <div className="absolute w-full h-full left-0 top-0 z-[-1]">
-        <h1>
-          <img
-            src="/images/hero-bg.png"
-            className="w-full h-full object-cover"
-          />
-        </h1>
+        <img src="/images/hero-bg.png" className="w-full h-full object-cover" />
       </div>
       <div className="container  flex flex-col items-center">
         <Header />

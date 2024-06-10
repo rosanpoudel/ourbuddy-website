@@ -11,9 +11,9 @@ const Header = () => {
 
   return (
     <header className="w-full flex justify-between items-center xl:px-8  py-6 xl:py-4">
-      <div className="text-2xl">
+      <h1>
         <img src="/images/logo.svg" className="max-w-[190px] " />
-      </div>
+      </h1>
       <div className="hidden xl:flex items-center space-x-10">
         {menu?.map((m, i) => (
           <a

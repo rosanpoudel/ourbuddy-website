@@ -7,9 +7,11 @@ const SubmitButton = () => {
   return (
     <button
       type="submit"
-      className="w-full min-w-[192px] min-h-[50px] xl:w-auto flex items-center justify-center px-8 py-3 rounded-lg bg-[#1276ff] text-[#ffffff] font-[500] hover:text-[#1276ff]  border border-[#1276ff]  hover:bg-[transparent] transition-all ease-in-out  duration-1000"
+      className={`w-full min-w-[192px] min-h-[50px] xl:w-auto flex items-center justify-center px-8 py-3 rounded-lg bg-[#1276ff] 
+      text-[#ffffff] font-[500]   border border-[#1276ff] ${
+        !pending ? "hover:bg-[transparent] hover:text-[#1276ff]" : ""
+      }   transition-all ease-in-out  duration-1000`}
     >
-      {/* {pending ? "Submiting" : "Send message"} */}
       {pending ? (
         <img src="/icons/spinner.svg" width={24} height={24} />
       ) : (
