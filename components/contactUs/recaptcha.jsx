@@ -1,4 +1,3 @@
-// src/components/ReCAPTCHAv3.js
 import React, { useEffect } from "react";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 

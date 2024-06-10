@@ -3,9 +3,12 @@ import Header from "../header";
 
 const HeroSection = () => {
   return (
-    <div className="hero-bg pb-10 xl:pb-20 relative h-[100vh] z-[1]">
+    <div className="hero-bg pb-10 xl:pb-20 relative min-h-[100vh] z-[1]">
       <div className="absolute w-full h-full left-0 top-0 z-[-1]">
-        <img src="/images/hero-bg.png" className="w-full h-full object-cover" />
+        <img
+          src="/images/hero-bg.png"
+          className="w-full w-full h-full object-cover"
+        />
       </div>
       <div className="container  flex flex-col items-center">
         <Header />
@@ -46,7 +49,7 @@ const HeroSection = () => {
 
           <div className="fadeInFromBottom w-full xl:w-[700px] h-[450px] mx-auto">
             <iframe
-              className="rounded-lg w-full h-full xl:w-[800px] xl:h-[450px]"
+              className="rounded-lg w-full h-full "
               src="https://www.youtube.com/embed/iYRXAsz5Dtc"
               title="Revolutionize Your Brokerage with Ourbuddy.ai: Secure, Share, and Succeed"
               frameBorder="0"

@@ -107,13 +107,13 @@ const ContactUsForm = ({ submitContactForm }) => {
             required
           />
         </div>
-        <div className="my-4">
+        {/* <div className="my-4">
           <GoogleReCaptchaProvider reCaptchaKey="6Ld06vIpAAAAAIZo7ADf17q2QglOYR5ZoAmKoGPY">
             <ReCAPTCHAv3 action="homepage" onVerify={handleVerify} />
           </GoogleReCaptchaProvider>
-        </div>
+        </div> */}
 
-        <div className="text-[#717885] text-sm mb-4 lg:mb-8">
+        <div className="text-[#717885] text-sm mb-5 lg:mb-8">
           By submitting this form you agree to our{" "}
           <a href="#" className="text-[#326CEC]">
             terms and conditions{" "}
