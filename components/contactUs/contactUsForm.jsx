@@ -1,8 +1,11 @@
 "use client";
+import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { SnackbarProvider, enqueueSnackbar } from "notistack";
 import SubmitButton from "./submitButton";
 import { useRef } from "react";
+import ReCAPTCHAv3 from "./recaptcha";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 const ContactUsForm = ({ submitContactForm }) => {
   const { ref, inView } = useInView({
@@ -11,11 +14,19 @@ const ContactUsForm = ({ submitContactForm }) => {
 
   const formRef = useRef(null);
 
+  const [token, setToken] = useState("");
+
+  const handleVerify = (token) => {
+    setToken(token);
+    console.log("reCAPTCHA token:", token);
+  };
+
   const handleSubmit = async (formData) => {
     const rawFormData = {
       email: formData.get("email"),
       subject: formData.get("subject"),
       message: formData.get("message"),
+      recaptcha_token: token,
     };
 
     const result = await submitContactForm(rawFormData);
@@ -48,7 +59,7 @@ const ContactUsForm = ({ submitContactForm }) => {
         ref={formRef}
         className={`${inView ? "fadeInFromLeft" : ""}`}
       >
-        <div className="mb-8">
+        <div className="mb-4 lg:mb-8">
           <label
             htmlFor="email"
             className="block mb-2 text-sm font-medium text-gray-700 "
@@ -64,7 +75,7 @@ const ContactUsForm = ({ submitContactForm }) => {
             required
           />
         </div>
-        <div className="mb-8">
+        <div className="mb-4 lg:mb-8">
           <label
             htmlFor="subject"
             className="block mb-2 text-sm font-medium text-gray-700 "
@@ -96,8 +107,13 @@ const ContactUsForm = ({ submitContactForm }) => {
             required
           />
         </div>
+        <div className="my-4">
+          <GoogleReCaptchaProvider reCaptchaKey="6Ld06vIpAAAAAIZo7ADf17q2QglOYR5ZoAmKoGPY">
+            <ReCAPTCHAv3 action="homepage" onVerify={handleVerify} />
+          </GoogleReCaptchaProvider>
+        </div>
 
-        <div className="text-[#717885] text-sm mb-8">
+        <div className="text-[#717885] text-sm mb-4 lg:mb-8">
           By submitting this form you agree to our{" "}
           <a href="#" className="text-[#326CEC]">
             terms and conditions{" "}
