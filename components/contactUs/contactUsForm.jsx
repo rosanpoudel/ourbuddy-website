@@ -2,11 +2,14 @@
 import { useInView } from "react-intersection-observer";
 import { SnackbarProvider, enqueueSnackbar } from "notistack";
 import SubmitButton from "./submitButton";
+import { useRef } from "react";
 
 const ContactUsForm = ({ submitContactForm }) => {
   const { ref, inView } = useInView({
     threshold: 0,
   });
+
+  const formRef = useRef(null);
 
   const handleSubmit = async (formData) => {
     const rawFormData = {
@@ -26,6 +29,7 @@ const ContactUsForm = ({ submitContactForm }) => {
         },
       });
     } else {
+      formRef.current.reset();
       enqueueSnackbar("Your message is sent successfully!", {
         variant: "info",
         anchorOrigin: {
@@ -37,11 +41,11 @@ const ContactUsForm = ({ submitContactForm }) => {
   };
 
   return (
-    <>
+    <div ref={ref}>
       <SnackbarProvider />
       <form
         action={handleSubmit}
-        ref={ref}
+        ref={formRef}
         className={`${inView ? "fadeInFromLeft" : ""}`}
       >
         <div className="mb-8">
@@ -107,7 +111,7 @@ const ContactUsForm = ({ submitContactForm }) => {
         </div>
         <SubmitButton />
       </form>
-    </>
+    </div>
   );
 };
 
