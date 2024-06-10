@@ -20,10 +20,18 @@ const ContactUsForm = ({ submitContactForm }) => {
     if (result?.error) {
       enqueueSnackbar(result?.error, {
         variant: "error",
+        anchorOrigin: {
+          vertical: "bottom",
+          horizontal: "right",
+        },
       });
     } else {
       enqueueSnackbar("Your message is sent successfully!", {
         variant: "info",
+        anchorOrigin: {
+          vertical: "bottom",
+          horizontal: "right",
+        },
       });
     }
   };

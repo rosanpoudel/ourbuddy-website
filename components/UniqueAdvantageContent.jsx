@@ -21,7 +21,7 @@ const UniqueAdvantageContent = () => {
                 inView ? "fadeInFromLeft" : ""
               } text-[#293c67] text-[18px] leading-10`}
             >
-              Our platform's video-enabled capability allows you to create,
+              Our platform&apos;s video-enabled capability allows you to create,
               capture, store, and share content with anyone, whether internal or
               external, individual or large groups, 10x faster than traditional
               methods.
