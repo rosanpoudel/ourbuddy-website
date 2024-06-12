@@ -18,6 +18,12 @@ const WhyCard = ({ title, description, icon }) => {
           className="w-[40px] h-[40px] xl:w-[60px] xl:h-[60px]"
           src={icon}
           alt={title}
+          onClick={() =>
+            trackEvent("Image interaction", {
+              interactionType: "Clicked",
+              image: `Why our buddy => ${title}`,
+            })
+          }
         />
       </div>
       <h3 className="text-[#1e266d]  text-[18px] xl:text-[20px] mb-[10px] xl:mb-[16px] font-bold xl:font-[500] xl:min-h-[48px]">

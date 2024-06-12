@@ -4,7 +4,7 @@ import SectionTitle from "../../components/sectionTitle";
 
 const Features = () => {
   return (
-    <div className="content-section bg-[#f8f8fc]" id="features">
+    <div id="features" className="content-section bg-[#f8f8fc]" i>
       <div className="container ">
         <div className="">
           <SectionTitle

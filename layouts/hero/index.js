@@ -4,7 +4,10 @@ import BookDemoBtn from "./bookDemoBtn";
 
 const HeroSection = () => {
   return (
-    <div className="hero-bg pb-10 xl:pb-20 relative xl:h-[100vh] z-[1]">
+    <div
+      id="hero-sectoin"
+      className="hero-bg pb-10 xl:pb-20 relative xl:h-[100vh] z-[1]"
+    >
       <div className="absolute w-full h-full left-0 top-0 z-[-1]">
         <img
           src="/images/hero-bg.png"
@@ -30,11 +33,11 @@ const HeroSection = () => {
 
           <div className="fadeInFromBottom w-full xl:w-[700px] h-[350px] xl:h-[400px] mx-auto">
             <iframe
+              // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               className="rounded-lg w-full h-full "
               src="https://www.youtube.com/embed/iYRXAsz5Dtc"
               title="Revolutionize Your Brokerage with Ourbuddy.ai: Secure, Share, and Succeed"
               frameBorder="0"
-              // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>

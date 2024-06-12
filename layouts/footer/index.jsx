@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="primary-gradient-bg">
+    <div id="footer" className="primary-gradient-bg">
       <div className="container py-10">
         <div className="flex justify-center text-center items-center">
           <div>

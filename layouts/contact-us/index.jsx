@@ -5,7 +5,7 @@ import submitContactForm from "@/components/contactUs/submitContactForm";
 
 const ContactUs = () => {
   return (
-    <div className="content-section bg-[#f8f8fc]" id="contact">
+    <div className="content-section bg-[#f8f8fc]" id="contact-us">
       <div className="container ">
         <div className="grid xl:grid-cols-10 gap-10 xl:gap-16">
           <div className="xl:col-span-6">

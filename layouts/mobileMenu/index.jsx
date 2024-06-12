@@ -1,6 +1,7 @@
 "use client";
 import HamburgerMenu from "@/components/hamburger-menu";
 import { trackEvent } from "@/lib/segment";
+import { formatDate } from "@/utils/date";
 import { useState, useEffect } from "react";
 
 const MobileMenu = () => {
@@ -14,7 +15,7 @@ const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleHamburgerClick = (label) => {
-    trackEvent("Button Clicked", { button: label });
+    trackEvent("Button Clicked", { buttonName: label });
 
     setIsOpen(!isOpen);
 
@@ -67,7 +68,7 @@ const MobileMenu = () => {
             <div className="mt-10">
               <a
                 onClick={() => handleHamburgerClick("Contact sales")}
-                href="#contact"
+                href="#contact-us"
                 className="w-full flex items-center justify-center text-[#ffffff] font-[500] px-8 py-3 mb-5 rounded-lg  border border-[#ffffff] hover:text-[#ffffff] hover:border-[#1276ff] hover:bg-[#1276ff] transition-all ease-in-out  duration-1000 "
               >
                 Contact sales

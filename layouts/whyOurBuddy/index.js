@@ -3,7 +3,7 @@ import SectionTitle from "../../components/sectionTitle";
 
 const WhyOurBuddy = () => {
   return (
-    <div className="content-section bg-[#f8f8fc]" id="benefits">
+    <div id="why-our-buddy" className="content-section bg-[#f8f8fc]">
       <div className="container ">
         <div className="">
           <SectionTitle

@@ -1,6 +1,7 @@
 "use client";
 
 import { trackEvent } from "@/lib/segment";
+import { formatDate } from "@/utils/date";
 import { useInView } from "react-intersection-observer";
 
 const BookDemoCard = ({ data }) => {
@@ -8,6 +9,7 @@ const BookDemoCard = ({ data }) => {
   const { ref, inView } = useInView({
     threshold: 0,
   });
+
   return (
     <div ref={ref} className="content-section">
       <div className="container">
@@ -17,6 +19,12 @@ const BookDemoCard = ({ data }) => {
               src="/images/cta-bg.jpg"
               alt="cta-banner"
               className="w-full h-full rounded-xl object-cover"
+              onClick={() =>
+                trackEvent("Image interaction", {
+                  interactionType: "Clicked",
+                  image: "CTA banner image",
+                })
+              }
             />
           </div>
           <div
@@ -41,9 +49,11 @@ const BookDemoCard = ({ data }) => {
             <div className={`${inView ? "fadeInFromBottom" : ""} text-center`}>
               <a
                 onClick={() =>
-                  trackEvent("Button Clicked", { button: btnText })
+                  trackEvent("Button Clicked", {
+                    buttonName: btnText,
+                  })
                 }
-                href="#contact"
+                href="#contact-us"
                 className="inline-flex items-center justify-center text-[14px] xl:text-[16px] text-[#ffffff] px-8 py-3 rounded-lg border border-[#ffffff] font-[500] hover:text-[#ffffff] hover:border-[#1276ff] hover:bg-[#1276ff] transition-all ease-in-out  duration-1000 "
               >
                 {btnText}

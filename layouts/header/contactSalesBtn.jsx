@@ -1,12 +1,17 @@
 "use client";
 import { trackEvent } from "@/lib/segment";
+import { formatDate } from "@/utils/date";
 import React from "react";
 
 const ContactSalesBtn = () => {
   return (
     <a
-      href="#contact"
-      onClick={() => trackEvent("Button Clicked", { button: "Contact sales" })}
+      href="#contact-us"
+      onClick={() =>
+        trackEvent("Button Clicked", {
+          buttonName: "Contact sales",
+        })
+      }
       className="flex items-center justify-center text-[#1276ff] font-[500] px-8 py-3 rounded-lg  border border-[#1276ff] hover:text-[#ffffff] hover:border-[#1276ff] hover:bg-[#1276ff] transition-all ease-in-out  duration-1000 "
     >
       Contact sales

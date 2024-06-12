@@ -1,12 +1,15 @@
+import { trackEvent } from "@/lib/segment";
 import MobileMenu from "../mobileMenu";
 import ContactSalesBtn from "./contactSalesBtn";
+import HeaderLogo from "./headerLogo";
 import LoginBtn from "./loginBtn";
+import MenuItem from "./menuItem";
 
 const Header = () => {
   const menu = [
-    { name: "Benefits", href: "#benefits" },
+    { name: "Benefits", href: "#why-our-buddy" },
     { name: "Features", href: "#features" },
-    { name: "Advantages", href: "#advantages" },
+    { name: "Advantages", href: "#unique-advantage" },
     { name: "Testimonials", href: "#testimonials" },
     { name: "Pricing", href: "#pricing" },
   ];
@@ -14,17 +17,11 @@ const Header = () => {
   return (
     <header className="w-full flex justify-between items-center xl:px-8  py-6 xl:py-4">
       <h1>
-        <img src="/images/logo.svg" className="max-w-[190px] " />
+        <HeaderLogo />
       </h1>
       <div className="hidden xl:flex items-center space-x-10">
         {menu?.map((m, i) => (
-          <a
-            key={i}
-            href={m?.href}
-            className="text-[#293c67] font-[500] hover:text-[#1276ff] "
-          >
-            {m?.name}
-          </a>
+          <MenuItem data={m} />
         ))}
       </div>
       <div className="hidden xl:flex items-center">

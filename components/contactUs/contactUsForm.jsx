@@ -7,6 +7,7 @@ import { useRef } from "react";
 import ReCAPTCHAv3 from "./recaptcha";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import { trackEvent } from "@/lib/segment";
+import { formatDate } from "@/utils/date";
 
 const ContactUsForm = ({ submitContactForm }) => {
   const { ref, inView } = useInView({
@@ -24,12 +25,12 @@ const ContactUsForm = ({ submitContactForm }) => {
 
   const handleSubmit = async (formData) => {
     const rawFormData = {
+      name: formData.get("name"),
       email: formData.get("email"),
       subject: formData.get("subject"),
       message: formData.get("message"),
       // recaptcha_token: token,
     };
-    trackEvent("Form Submit", { data: rawFormData });
 
     const result = await submitContactForm(rawFormData);
 
@@ -41,7 +42,15 @@ const ContactUsForm = ({ submitContactForm }) => {
           horizontal: "right",
         },
       });
+      trackEvent("Error Occured", {
+        errorMessage: "Form Submission Failed",
+        data: rawFormData,
+      });
     } else {
+      trackEvent("Form Submitted", {
+        data: rawFormData,
+        formType: "Contact us form",
+      });
       formRef.current.reset();
       enqueueSnackbar(
         "Thank you for your inquiry! We will get back to you soon. ",
@@ -69,15 +78,43 @@ const ContactUsForm = ({ submitContactForm }) => {
             htmlFor="email"
             className="block mb-2 text-sm font-medium text-gray-700 "
           >
-            Your email
+            Full Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            className="shadow-sm border border-gray-300 text-[#293C67] text-sm rounded-lg block w-full p-2.5 "
+            placeholder="Your full name"
+            required
+            onFocus={() =>
+              trackEvent("Contact Form Interacted", {
+                formField: "Name",
+                interactionType: "Focus",
+              })
+            }
+          />
+        </div>
+        <div className="mb-4 lg:mb-8">
+          <label
+            htmlFor="email"
+            className="block mb-2 text-sm font-medium text-gray-700 "
+          >
+            Email Address
           </label>
           <input
             type="email"
             id="email"
             name="email"
             className="shadow-sm border border-gray-300 text-[#293C67] text-sm rounded-lg block w-full p-2.5 "
-            placeholder="email@ourbuddy"
+            placeholder="your email address"
             required
+            onFocus={() =>
+              trackEvent("Contact Form Interacted", {
+                formField: "Email",
+                interactionType: "Focus",
+              })
+            }
           />
         </div>
         <div className="mb-4 lg:mb-8">
@@ -94,6 +131,12 @@ const ContactUsForm = ({ submitContactForm }) => {
             className="block p-3 w-full text-sm text-[#293C67] rounded-lg border border-gray-300 shadow-sm "
             placeholder="Let us know how we can help you"
             required
+            onFocus={() =>
+              trackEvent("Contact Form Interacted", {
+                formField: "Subject",
+                interactionType: "Focus",
+              })
+            }
           />
         </div>
         <div className="sm:col-span-2 mb-3">
@@ -109,7 +152,12 @@ const ContactUsForm = ({ submitContactForm }) => {
             rows="6"
             className="block p-2.5 w-full text-sm text-[#293C67]  rounded-lg shadow-sm border border-gray-300"
             placeholder="Leave a comment..."
-            required
+            onFocus={() =>
+              trackEvent("Contact Form Interacted", {
+                formField: "Message",
+                interactionType: "Focus",
+              })
+            }
           />
         </div>
         {/* <div className="my-4">

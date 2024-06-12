@@ -18,7 +18,7 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="content-section bg-[#f8f8fc]" id="testimonials">
+    <div id="testimonials" className="content-section bg-[#f8f8fc]">
       <div className="container">
         <SectionTitle
           heading="What Our Clients Are Saying"

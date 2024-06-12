@@ -1,4 +1,5 @@
 "use client";
+import { trackEvent } from "@/lib/segment";
 import { useState, useEffect } from "react";
 
 const ScrollToTop = () => {
@@ -13,6 +14,7 @@ const ScrollToTop = () => {
   };
 
   const scrollToTop = () => {
+    trackEvent("Scroll to top", {});
     window.scrollTo({
       top: 0,
       behavior: "smooth",
