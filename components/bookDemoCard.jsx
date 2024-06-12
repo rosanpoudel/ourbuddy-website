@@ -1,7 +1,7 @@
 "use client";
 
 import { trackEvent } from "@/lib/segment";
-import { formatDate } from "@/utils/date";
+import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 
 const BookDemoCard = ({ data }) => {
@@ -47,7 +47,7 @@ const BookDemoCard = ({ data }) => {
               </p>
             </div>
             <div className={`${inView ? "fadeInFromBottom" : ""} text-center`}>
-              <a
+              <Link
                 onClick={() =>
                   trackEvent("Button Clicked", {
                     buttonName: btnText,
@@ -72,7 +72,7 @@ const BookDemoCard = ({ data }) => {
                     d="M1 5h12m0 0L9 1m4 4L9 9"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
