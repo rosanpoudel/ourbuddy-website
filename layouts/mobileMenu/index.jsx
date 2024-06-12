@@ -27,7 +27,11 @@ const MobileMenu = () => {
   };
 
   useEffect(() => {
-    trackEvent("Page visit", { type: "Mobile" });
+    if (window) {
+      if (window.innerWidth < 768) {
+        trackEvent("Page visit", { type: "Mobile" });
+      }
+    }
   }, []);
 
   return (

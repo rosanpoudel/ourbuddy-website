@@ -75,7 +75,7 @@ const ContactUsForm = ({ submitContactForm }) => {
       >
         <div className="mb-4 lg:mb-8">
           <label
-            htmlFor="email"
+            htmlFor="name"
             className="block mb-2 text-sm font-medium text-gray-700 "
           >
             Full Name
