@@ -6,6 +6,7 @@ import SubmitButton from "./submitButton";
 import { useRef } from "react";
 import ReCAPTCHAv3 from "./recaptcha";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import { trackEvent } from "@/lib/segment";
 
 const ContactUsForm = ({ submitContactForm }) => {
   const { ref, inView } = useInView({
@@ -26,8 +27,9 @@ const ContactUsForm = ({ submitContactForm }) => {
       email: formData.get("email"),
       subject: formData.get("subject"),
       message: formData.get("message"),
-      recaptcha_token: token,
+      // recaptcha_token: token,
     };
+    trackEvent("Form Submit", { data: rawFormData });
 
     const result = await submitContactForm(rawFormData);
 
@@ -42,7 +44,7 @@ const ContactUsForm = ({ submitContactForm }) => {
     } else {
       formRef.current.reset();
       enqueueSnackbar(
-        "Thank you for your inquiry! We will get back to you soon.",
+        "Thank you for your inquiry! We will get back to you soon. ",
         {
           variant: "info",
           anchorOrigin: {

@@ -1,4 +1,5 @@
 import ScrollToTop from "@/components/scrollToTop";
+import SegmentAnalyticsInit from "@/components/segmentAnalyticsInit";
 import BookDemo from "@/layouts/book-demo";
 import ContactUs from "@/layouts/contact-us";
 import Features from "@/layouts/features";
@@ -11,6 +12,7 @@ import WhyOurBuddy from "@/layouts/whyOurBuddy";
 export default function Home() {
   return (
     <main>
+      <SegmentAnalyticsInit />
       <HeroSection />
       <WhyOurBuddy />
       <BookDemo

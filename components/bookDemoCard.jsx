@@ -1,5 +1,6 @@
 "use client";
 
+import { trackEvent } from "@/lib/segment";
 import { useInView } from "react-intersection-observer";
 
 const BookDemoCard = ({ data }) => {
@@ -39,6 +40,9 @@ const BookDemoCard = ({ data }) => {
             </div>
             <div className={`${inView ? "fadeInFromBottom" : ""} text-center`}>
               <a
+                onClick={() =>
+                  trackEvent("Button Clicked", { button: btnText })
+                }
                 href="#contact"
                 className="inline-flex items-center justify-center text-[14px] xl:text-[16px] text-[#ffffff] px-8 py-3 rounded-lg border border-[#ffffff] font-[500] hover:text-[#ffffff] hover:border-[#1276ff] hover:bg-[#1276ff] transition-all ease-in-out  duration-1000 "
               >
