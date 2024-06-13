@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 import SectionTitle from "@/components/sectionTitle";
 import { trackEvent } from "@/lib/segment";
 import { useInView } from "react-intersection-observer";
@@ -7,6 +8,14 @@ const UniqueAdvantageContent = () => {
   const { ref, inView } = useInView({
     threshold: 0,
   });
+
+  useEffect(() => {
+    if (inView) {
+      trackEvent("Content Viewed", {
+        contentTitle: "UNIQUE ADVANTAGES",
+      });
+    }
+  }, [inView]);
   return (
     <div id="unique-advantage" ref={ref} className="content-section">
       <div className="container">

@@ -1,5 +1,5 @@
 "use client";
-
+import { useEffect } from "react";
 import { trackEvent } from "@/lib/segment";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
@@ -9,6 +9,14 @@ const BookDemoCard = ({ data }) => {
   const { ref, inView } = useInView({
     threshold: 0,
   });
+
+  useEffect(() => {
+    if (inView) {
+      trackEvent("Content Viewed", {
+        contentTitle: "CTA",
+      });
+    }
+  }, [inView]);
 
   return (
     <div ref={ref} className="content-section">
