@@ -6,6 +6,7 @@ import Footer from "@/layouts/footer";
 import HeroSection from "@/layouts/hero";
 import Testimonials from "@/layouts/testimonials";
 import UniqueAdvantage from "@/layouts/unique-advantage";
+import VideoBenefits from "@/layouts/video-benefits";
 import WhyOurBuddy from "@/layouts/whyOurBuddy";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       />
       <Features />
       <UniqueAdvantage />
+      <VideoBenefits />
       <Testimonials />
       <BookDemo
         title="Ready to Transform Your Brokerage?"
