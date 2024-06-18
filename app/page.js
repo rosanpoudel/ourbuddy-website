@@ -16,21 +16,25 @@ export default function Home() {
       <SegmentAnalyticsInit />
       <HeroSection />
       <WhyOurBuddy />
-      <BookDemo
-        title="Is a meeting more convenient?"
-        description="If you prefer discussing your needs over a call instead, book an appointment with our expert Sales team."
-        btnText="Get the ball rolling"
-      />
+      <div className="bg-even">
+        <BookDemo
+          title="Is a meeting more convenient?"
+          description="If you prefer discussing your needs over a call instead, book an appointment with our expert Sales team."
+          btnText="Get the ball rolling"
+        />
+      </div>
       <Features />
       <UniqueAdvantage />
       <VideoBenefits />
       <Testimonials />
-      <BookDemo
-        title="Ready to Transform Your Brokerage?"
-        description="Experience the Ourbuddy.ai difference today. Request a demo and see how our platform can
+      <div className="bg-odd">
+        <BookDemo
+          title="Ready to Transform Your Brokerage?"
+          description="Experience the Ourbuddy.ai difference today. Request a demo and see how our platform can
         elevate your brokerage."
-        btnText="Request a demo"
-      />
+          btnText="Request a demo"
+        />
+      </div>
       <ContactUs />
       <Footer />
       <ScrollToTop />

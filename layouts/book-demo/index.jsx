@@ -2,7 +2,7 @@ import BookDemoCard from "@/components/bookDemoCard";
 
 const BookDemo = (data) => {
   return (
-    <div id="CTA" className="bg-odd">
+    <div id="CTA">
       <BookDemoCard data={data} />
     </div>
   );
