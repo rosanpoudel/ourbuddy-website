@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import { trackEvent } from "@/lib/segment";
+import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 const VideoBenefitsAccordion = () => {
@@ -210,25 +211,38 @@ const VideoBenefitsAccordion = () => {
     threshold: 0,
   });
 
+  useEffect(() => {
+    if (inView) {
+      trackEvent("Content Viewed", {
+        contentTitle: "VIDEO BENEFITs",
+      });
+    }
+  }, [inView]);
+
   const [active, setActive] = useState([data[0]?.id]);
 
-  const handleItemClick = (id) => {
-    if (active?.includes(id)) {
-      setActive(active?.filter((d) => d !== id));
+  const handleItemClick = (d) => {
+    trackEvent("Accordion opened", {
+      contentTitle: d?.title,
+    });
+
+    if (active?.includes(d?.id)) {
+      setActive(active?.filter((d) => d !== d?.id));
     } else {
-      setActive([...active, id]);
+      setActive([...active, d?.id]);
     }
   };
 
   return (
     <div ref={ref} className={`${inView ? "fadeInFromTop" : ""}`}>
       {/* row */}
-      {data?.map((d) => (
+      {data?.map((d, i) => (
         <div
           className={`mb-8 last:mb-0 ${
             active?.includes(d?.id) ? "bg-gray-100 rounded-xl" : ""
           }`}
-          onClick={() => handleItemClick(d?.id)}
+          onClick={() => handleItemClick(d)}
+          key={i}
         >
           {/* question */}
           <div
