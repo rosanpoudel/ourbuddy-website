@@ -227,7 +227,7 @@ const VideoBenefitsAccordion = () => {
     });
 
     if (active?.includes(d?.id)) {
-      setActive(active?.filter((d) => d !== d?.id));
+      setActive(active?.filter((dt) => dt !== d?.id));
     } else {
       setActive([...active, d?.id]);
     }
