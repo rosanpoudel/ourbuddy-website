@@ -17,7 +17,7 @@ const SectionContents = () => {
     }
   }, [inView]);
   return (
-    <div id="why-our-buddy" className="content-section bg-[#f8f8fc]">
+    <div id="why-our-buddy" className="content-section bg-odd">
       <div className="container ">
         <div className="">
           <SectionTitle

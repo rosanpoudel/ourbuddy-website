@@ -18,7 +18,7 @@ const FeatureContents = () => {
     }
   }, [inView]);
   return (
-    <div ref={ref} id="features" className="content-section bg-[#f8f8fc]">
+    <div ref={ref} id="features" className="content-section bg-odd">
       <div className="container ">
         <div className="">
           <SectionTitle

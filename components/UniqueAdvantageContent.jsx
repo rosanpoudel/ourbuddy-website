@@ -17,7 +17,7 @@ const UniqueAdvantageContent = () => {
     }
   }, [inView]);
   return (
-    <div id="unique-advantage" ref={ref} className="content-section">
+    <div id="unique-advantage" ref={ref} className="content-section bg-even">
       <div className="container">
         <div className="grid xl:grid-cols-10 gap-10 xl:gap-20">
           <div className="xl:col-span-4 flex flex-col justify-center">

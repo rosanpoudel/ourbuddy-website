@@ -11,7 +11,7 @@ const TestimonialsCard = ({ title, clientName, company }) => {
       ref={ref}
       className={`${
         inView ? "fadeInFromTop" : ""
-      } bg-white flex flex-col justify-between rounded-3xl shadow-2xl shadow-gray-100 px-8 xl:px-10 py-10 xl:py-12  hover:-translate-y-4 transition-all duration-700`}
+      } bg-white flex flex-col justify-between rounded-3xl border border-gray-100 shadow-2xl shadow-gray-100 px-8 xl:px-10 py-10 xl:py-12  hover:-translate-y-4 transition-all duration-700`}
     >
       <div>
         <img

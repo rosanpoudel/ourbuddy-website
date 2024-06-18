@@ -20,7 +20,7 @@ const ContactUsContents = () => {
     }
   }, [inView]);
   return (
-    <div ref={ref} className="content-section bg-[#f8f8fc]" id="contact-us">
+    <div ref={ref} className="content-section bg-even" id="contact-us">
       <div className="container ">
         <div className="grid xl:grid-cols-10 gap-10 xl:gap-16">
           <div className="xl:col-span-6">

@@ -33,7 +33,7 @@ const TestimonialContets = () => {
     },
   ];
   return (
-    <div ref={ref} id="testimonials" className="content-section bg-[#f8f8fc]">
+    <div ref={ref} id="testimonials" className="content-section bg-even">
       <div className="container">
         <SectionTitle
           heading="What Our Clients Are Saying"

@@ -4,7 +4,7 @@ import React from "react";
 
 const VideoBenefits = () => {
   return (
-    <div className="content-section" id="videoBenefits">
+    <div className="content-section bg-odd" id="videoBenefits">
       <div className="container">
         <SectionTitle
           heading="Personalized video use cases and benefits"
