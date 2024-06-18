@@ -1,4 +1,5 @@
 "use client";
+import { trackEvent } from "@/lib/segment";
 import { useState, useEffect } from "react";
 
 const ScrollToTop = () => {
@@ -13,6 +14,7 @@ const ScrollToTop = () => {
   };
 
   const scrollToTop = () => {
+    trackEvent("Scroll to top", {});
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -29,7 +31,7 @@ const ScrollToTop = () => {
     <>
       {isVisible && (
         <div
-          className="bounce  fixed flex items-center justify-center right-5 bottom-5  w-12 h-12 rounded-full cursor-pointer primary-gradient-bg"
+          className="bounce  fixed flex items-center justify-center right-2 bottom-2 xl:right-5 xl:bottom-5 w-10 h-10  xl:w-12 xl:h-12 rounded-full cursor-pointer primary-gradient-bg"
           onClick={scrollToTop}
         >
           <svg

@@ -8,6 +8,7 @@ const PageScrollAnimation = () => {
     damping: 30,
     restDelta: 0.001,
   });
+
   return <motion.div style={{ scaleX }} className="scroll-progress-bar" />;
 };
 

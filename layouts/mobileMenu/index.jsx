@@ -1,6 +1,8 @@
 "use client";
 import HamburgerMenu from "@/components/hamburger-menu";
-import { useState } from "react";
+import { trackEvent } from "@/lib/segment";
+import { formatDate } from "@/utils/date";
+import { useState, useEffect } from "react";
 
 const MobileMenu = () => {
   const menu = [
@@ -12,7 +14,9 @@ const MobileMenu = () => {
   ];
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleHamburgerClick = () => {
+  const handleHamburgerClick = (label) => {
+    trackEvent("Button Clicked", { buttonName: label });
+
     setIsOpen(!isOpen);
 
     if (!isOpen) {
@@ -21,6 +25,14 @@ const MobileMenu = () => {
       document.body.style.overflow = "auto";
     }
   };
+
+  useEffect(() => {
+    if (window) {
+      if (window.innerWidth < 768) {
+        trackEvent("Page visit", { type: "Mobile" });
+      }
+    }
+  }, []);
 
   return (
     <div className="xl:hidden">
@@ -37,7 +49,7 @@ const MobileMenu = () => {
         <>
           <div
             className="fixed inset-0 bg-black opacity-50 z-40 "
-            onClick={handleHamburgerClick}
+            onClick={() => handleHamburgerClick("Hamburger menu")}
           />
 
           <div
@@ -51,7 +63,7 @@ const MobileMenu = () => {
                   key={i}
                   href={m?.href}
                   className="block text-[#d7d7d7] text-[20px] mb-4 font-[500] hover:text-[#1276ff] py-3"
-                  onClick={handleHamburgerClick}
+                  onClick={() => handleHamburgerClick(m?.name)}
                 >
                   {m?.name}
                 </a>
@@ -59,8 +71,8 @@ const MobileMenu = () => {
             </div>
             <div className="mt-10">
               <a
-                onClick={handleHamburgerClick}
-                href="#contact"
+                onClick={() => handleHamburgerClick("Contact sales")}
+                href="#contact-us"
                 className="w-full flex items-center justify-center text-[#ffffff] font-[500] px-8 py-3 mb-5 rounded-lg  border border-[#ffffff] hover:text-[#ffffff] hover:border-[#1276ff] hover:bg-[#1276ff] transition-all ease-in-out  duration-1000 "
               >
                 Contact sales
@@ -82,7 +94,7 @@ const MobileMenu = () => {
               </a>
 
               <a
-                onClick={handleHamburgerClick}
+                onClick={() => handleHamburgerClick("Login")}
                 href="#"
                 className="w-full flex items-center justify-center px-8 py-3 rounded-lg bg-[#1276ff] text-[#ffffff] font-[500] hover:text-[#1276ff]  border border-[#1276ff]  hover:bg-[transparent] transition-all ease-in-out  duration-1000"
               >
