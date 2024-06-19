@@ -208,7 +208,7 @@ const VideoBenefitsAccordion = () => {
   ];
 
   const { ref, inView } = useInView({
-    threshold: 0,
+    threshold: 0.2,
   });
 
   useEffect(() => {
@@ -219,75 +219,29 @@ const VideoBenefitsAccordion = () => {
     }
   }, [inView]);
 
-  const [active, setActive] = useState([data[0]?.id]);
-
-  const handleItemClick = (d) => {
-    trackEvent("Accordion opened", {
-      contentTitle: d?.title,
-    });
-
-    if (active?.includes(d?.id)) {
-      setActive(active?.filter((dt) => dt !== d?.id));
-    } else {
-      setActive([...active, d?.id]);
-    }
-  };
-
   return (
-    <div ref={ref} className={`${inView ? "fadeInFromTop" : ""}`}>
-      {/* row */}
-      {data?.map((d, i) => (
-        <div
-          className={`mb-8 last:mb-0 ${
-            active?.includes(d?.id) ? "bg-gray-100 rounded-xl" : ""
-          }`}
-          onClick={() => handleItemClick(d)}
-          key={i}
-        >
-          {/* question */}
-          <div
-            className={`flex items-center transition duration-600 ease-in-out rounded-xl cursor-pointer  w-full px-4 py-4 transition ${
-              active?.includes(d?.id)
-                ? "bg-gray-100 text-[#1276ff]"
-                : "text-[#293c67] border border-light"
-            }`}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              className="mr-2"
-            >
-              <defs>
-                <clipPath id="a">
-                  <path
-                    data-name="Rectangle 3883"
-                    fill="#fff"
-                    stroke="#707070"
-                    d="M596 821h24v24h-24z"
-                  />
-                </clipPath>
-              </defs>
-              <g
-                data-name="Mask Group 945"
-                transform="translate(-596 -821)"
-                clip-path="url(#a)"
-              >
-                <path
-                  data-name="Path 15215"
-                  d="m614.138 830.315-5.768 5.769-5.77-5.769"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                />
-              </g>
-            </svg>
-            <span className="font-[500] text-[18px]">{d?.title}</span>
-          </div>
+    <div ref={ref} classname={`${inView ? "fadeInFromTop" : ""}`}>
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+        {data?.map((d, i) => (
+          <div className={`shadow-2xl rounded-2xl `}>
+            <div className="overflow-hidden">
+              <img
+                src={`/video-benefits/image-${i + 1}.webp`}
+                className="rounded-tr-2xl rounded-tl-2xl transition duration-300 ease-in-out hover:scale-110 w-full"
+                alt={d?.title}
+                onClick={() =>
+                  trackEvent("Image interaction", {
+                    interactionType: "Clicked",
+                    image: `Video benefits => ${d?.title}`,
+                  })
+                }
+              />
+            </div>
 
-          {/* answer */}
-          {active?.includes(d?.id) && (
-            <div className={`pl-12 pr-5 pb-8 mb-5 pt-2 `}>
+            <div className="px-6 pt-5 pb-8">
+              <h4 class="text-[#1e266d]  text-[18px] xl:text-[20px] mb-[10px] xl:mb-[16px] font-bold xl:font-[500] xl:min-h-[48px]">
+                {d?.title}
+              </h4>
               <div className="mb-4">
                 <p className="text-[#293c67] text-[16px] font-[600] mb-1">
                   Scenario:
@@ -302,9 +256,9 @@ const VideoBenefitsAccordion = () => {
                 <p className="text-[#4a4242]">{d?.details?.benefit}</p>
               </div>
             </div>
-          )}
-        </div>
-      ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
