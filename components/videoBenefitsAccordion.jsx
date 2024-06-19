@@ -223,7 +223,7 @@ const VideoBenefitsAccordion = () => {
     <div ref={ref} classname={`${inView ? "fadeInFromTop" : ""}`}>
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
         {data?.map((d, i) => (
-          <div className={`shadow-2xl rounded-2xl `}>
+          <div className={`shadow-2xl rounded-2xl `} key={i}>
             <div className="overflow-hidden">
               <img
                 src={`/video-benefits/image-${i + 1}.webp`}
