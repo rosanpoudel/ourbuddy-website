@@ -34,7 +34,7 @@ const OfficeDetails = () => {
             Company Information
           </div>
           <div className="text-[14px] xl:text-[16px] text-center text-[#293c67]">
-            Softverse Technology Inc. & OurBuddy.AI
+            OURBUDDY AI INC.
           </div>
         </div>
 
@@ -58,7 +58,7 @@ const OfficeDetails = () => {
             Address
           </div>
           <div className="text-[14px] xl:text-[16px] text-center text-[#293c67]">
-            1234 Street Name, City, Nova Scotia, Canada
+            18 Sheradon Pl, Halifax, NS B3M 3N5
           </div>
         </div>
 
@@ -80,18 +80,18 @@ const OfficeDetails = () => {
           <div className="text-[14px] xl:text-[16px] text-center text-[#868C97]">
             <div className="flex items-center justify-center mb-2">
               <img src="/images/phone.svg" />
-              <a href="tel:(123) 456-7890" className="text-[#293c67] ml-2">
-                {"(123) 456-7890"}
+              <a href="tel:902-412-9122" className="text-[#293c67] ml-2">
+                {"902-412-9122"}
               </a>
             </div>
             <div className="flex items-center justify-center">
               <img src="/images/email.svg" />
 
               <a
-                href="mailt0:contact@ourbuddy.ai"
+                href="mailt0:letsdoit@ourbuddy.ai"
                 className="text-[#293c67] ml-2"
               >
-                contact@ourbuddy.ai
+                letsdoit@ourbuddy.ai
               </a>
             </div>
           </div>
