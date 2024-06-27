@@ -20,16 +20,9 @@ const TestimonialContets = () => {
   const data = [
     {
       title:
-        "Since we started using Ourbuddy.ai, our productivity has increased significantly, and our clients are happier than ever!",
-      clientName: "Anil Pradhan",
-      company: "Keyes Insurance",
-    },
-
-    {
-      title:
-        "The analytics feature has been a game-changer for us. We now understand our business better and can make more informed decisions.",
-      clientName: "Roshan Poudel",
-      company: "Nepal Life Insurance",
+        "Ourbuddy has been instrumental in not only helping us onboard new brokers but increasing collaboration between senior brokers. It truly is a game changer.",
+      company: "Keyes Insurance Brokerage Ltd.",
+      clientName: "Shaun Keyes, President",
     },
   ];
   return (
